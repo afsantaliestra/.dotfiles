@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    "bierner.markdown-mermaid",
+    "esbenp.prettier-vscode",
+    "mechatroner.rainbow-csv",
+    "mhutchie.git-graph",
+    "shardulm94.trailing-spaces",
+    "tamasfe.even-better-toml",
+    // "ms-vscode.makefile-tools",
+    "ms-azuretools.vscode-containers",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+
+    // Python
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "charliermarsh.ruff",
+    "meta.pyrefly",
+
+    // Nix
+    "pinage404.nix-extension-pack",
+
+    // Themes, icons, ...
+    "monokai.theme-monokai-pro-vscode",
+    "whizkydee.material-palenight-theme",
+    "pkief.material-icon-theme",
+    "johnpapa.vscode-peacock",
+    "pnp.polacode"
+  ]
+}
