@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "bierner.markdown-mermaid",
+    "esbenp.prettier-vscode",
+    "mechatroner.rainbow-csv",
+    "mhutchie.git-graph",
+    "shardulm94.trailing-spaces",
+    "tamasfe.even-better-toml",
+    // "ms-vscode.makefile-tools",
+
+    // Python
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "charliermarsh.ruff",
+    "meta.pyrefly",
+
+    // Nix
+    "pinage404.nix-extension-pack"
+  ]
+}

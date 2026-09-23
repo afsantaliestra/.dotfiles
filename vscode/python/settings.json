@@ -1,0 +1,52 @@
+{
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "files.exclude": {
+    "**/.cache": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.grimp_cache": true,
+    "**/.hypothesis": true,
+    "**/*.egg-info": true,
+    "**/.direnv": true,
+    "**/.devenv": true,
+    "**/.python-version": true,
+    "**/*coverage": true,
+    "**/*coverage.*": true,
+    "**/htmlcov": true,
+    "**/site": true
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "[markdown]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[toml]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "evenBetterToml.taplo.configFile.enabled": true,
+  "evenBetterToml.taplo.configFile.path": ".taplo.toml",
+  "evenBetterToml.formatter.reorderKeys": false,
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[nix]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "python.terminal.activateEnvironment": false
+}

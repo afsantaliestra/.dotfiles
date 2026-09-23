@@ -1,0 +1,42 @@
+{
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "window.zoomLevel": 2,
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+  "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "search.defaultViewMode": "tree",
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": true,
+  "files.exclude": {
+    "**/.cache": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.grimp_cache": true,
+    "**/.hypothesis": true,
+    "**/*.egg-info": true,
+    "**/.direnv": true,
+    "**/.devenv": true,
+    "**/.python-version": true
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "git.ignoreMissingGitWarning": true,
+  "git.confirmSync": false,
+  "scm.defaultViewMode": "tree",
+  "[markdown]": {
+    "editor.wordWrap": "off",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.terminal.activateEnvironment": false,
+  "python.languageServer": "Default",
+  "[python-markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
