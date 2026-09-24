@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv sync *)",
+      "Bash(uv run ruff *)",
+      "Bash(uv run pyrefly *)",
+      "Bash(uv run ty *)",
+      "Bash(uv run pytest *)",
+      "Bash(make sync *)",
+      "Bash(make run *)",
+      "Bash(make check *)",
+      "Bash(make test *)",
+      "Bash(make all *)",
+      "Bash(openspec validate *)",
+      "Bash(openspec instructions *)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"$HOME/.claude/plugins/marketplaces/caveman/src/hooks/caveman-statusline.sh\""
+  },
+  "enabledPlugins": {
+    "caveman@caveman": true
+  },
+  "extraKnownMarketplaces": {
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    }
+  },
+  "tui": "fullscreen",
+  "theme": "dark",
+  "remoteControlAtStartup": false,
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
+  }
+}

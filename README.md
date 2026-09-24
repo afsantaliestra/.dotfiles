@@ -1,26 +1,61 @@
 # .dotfiles
 
-Dotfiles for Linux, MacOS and Windows.
+Dotfiles for Linux and MacOS.
 
 ## Contents
 
 | Application                  | Description                                   |
 | ---------------------------- | --------------------------------------------- |
+| [Caveman](caveman/)          | Caveman plugin/skills settings.               |
+| [Claude Code](claude/)       | Claude Code settings.                         |
 | [VSCode - VSCodium](vscode/) | VSCode editor settings for projects and user. |
 
-## VSCode - VSCodium
+## Caveman [GitHub](https://github.com/juliusbrussee/caveman)
 
-Settings include:
+Settings for caveman.
 
-- `user.json` to be placed at user vscode configuration path.
-  - **VSCodium paths**
-    - Linux: `$HOME/.config/VSCodium/User/settings.json`
-    - MacOS: `$HOME/Library/Application\ Support/VSCodium/User/settings.json`
-    - Windows: `%APPDATA%\VSCodium\User\settings.json`
-  - **VSCode paths**
-    - Linux: `$HOME/.config/Code/User/settings.json`
-    - MacOS: `$HOME/Library/Application\ Support/Code/User/settings.json`
-    - Windows: `%APPDATA%\Code\User\settings.json`
-- `python` to be placed at projects root at '.vscode. It contains:
-  - `extensions.json` with recomended extensions for python projects.
-  - `settings.json` with recomended settings for python projects.
+**Default location**:
+
+- **Linux**: `$HOME/.config/caveman/config.json`
+- **MacOS**: `$HOME/Library/Application Support/caveman/config.json`
+
+Install caveman with:
+
+```bash
+npx skills add JuliusBrussee/caveman -g
+# or use
+make install-caveman
+```
+
+## Claude Code [Docs](https://code.claude.com/docs)
+
+Settings for claude code.
+
+**Default location**:
+
+- `Linux`: `$HOME/.claude/settings.json`
+- `MacOS`: `$HOME/.claude/settings.json`
+
+**Install claude-code with**:
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+# or use
+make install-claude
+```
+
+## VSCodium [GitHub](https://github.com/vscodium/vscodium) - VSCode [GitHub](https://github.com/microsoft/vscode)
+
+Settings for VSCodium/VSCode, for both user and projects.
+
+**Default location for user configuration**:
+
+**VSCodium paths**
+
+- Linux: `$HOME/.config/VSCodium/User/settings.json`
+- MacOS: `$HOME/Library/Application\ Support/VSCodium/User/settings.json`
+
+**VSCode paths**
+
+- Linux: `$HOME/.config/Code/User/settings.json`
+- MacOS: `$HOME/Library/Application\ Support/Code/User/settings.json`
