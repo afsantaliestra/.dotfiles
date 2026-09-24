@@ -1,0 +1,9 @@
+theme = "Abernathy"
+
+working-directory = "~/workspace";
+
+tab-inherit-working-directory = false
+window-inherit-working-directory = false
+
+keybind = ctrl+t=new_tab
+keybind = ctrl+shift+n=new_window

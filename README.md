@@ -8,6 +8,7 @@ Dotfiles for Linux and MacOS.
 | ---------------------------- | --------------------------------------------- |
 | [Caveman](caveman/)          | Caveman plugin/skills settings.               |
 | [Claude Code](claude/)       | Claude Code settings.                         |
+| [Ghostty](ghostty/)          | Ghostty terminal settings.                    |
 | [Shell](shell/)              | Aliases and functions for zsh shell.          |
 | [VSCode - VSCodium](vscode/) | VSCode editor settings for projects and user. |
 
@@ -17,15 +18,19 @@ Settings for caveman.
 
 **Default location**:
 
-- **Linux**: `$HOME/.config/caveman/config.json`
-- **MacOS**: `$HOME/Library/Application Support/caveman/config.json`
+- **Linux/MacOS**: `$HOME/.config/caveman/config.json`
 
-Install caveman with:
+**Commands**:
 
 ```bash
-npx skills add JuliusBrussee/caveman -g
-# or use
-make install-caveman
+# Setup settings
+make caveman-setup
+
+# Install caveman
+make caveman-install
+
+# Setup and install
+make caveman
 ```
 
 ## Claude Code [Docs](https://code.claude.com/docs)
@@ -34,20 +39,39 @@ Settings for claude code.
 
 **Default location**:
 
-- `Linux`: `$HOME/.claude/settings.json`
-- `MacOS`: `$HOME/.claude/settings.json`
+- `Linux/MacOS`: `$HOME/.claude/settings.json`
 
-**Install claude-code with**:
+**Commands**:
 
 ```bash
-curl -fsSL https://claude.ai/install.sh | bash
-# or use
-make install-claude
+# Setup settings
+make claude-setup
+
+# Install claude
+make claude-install
+
+# Setup and install.
+make claude
 ```
 
-## Shell
+## Ghostty [GitHub](https://github.com/ghostty-org/ghostty)
 
-Shortcuts for commonly used commands.
+Settings for Ghostty terminal.
+
+**Default location**:
+
+- `Linux/MacOS`: `$HOME/.config/ghostty/config`
+
+**Commands**:
+
+```bash
+# Setup settings
+make ghostty-setup
+```
+
+## Shell [zsh](https://www.zsh.org/) [oh-my-zsh GitHub](https://github.com/ohmyzsh/ohmyzsh)
+
+Shortcuts for commonly used commands for zsh.
 
 | Alias/Function | Command                                                                                                                                                                                             |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -72,16 +96,15 @@ Shortcuts for commonly used commands.
 | `dckrl`        | `docker restart "$1"; docker logs -f --tail=50 "$1"`                                                                                                                                                |
 | `dcknets`      | `docker ps -q \| xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' \| sed 's#^/##'`                                                        |
 
-**Install shell aliases and functions with**:
+**Default location**:
+
+- `Linux/MacOS`: `$HOME/.zshrc`
+
+**Commands**:
 
 ```bash
-echo "source ./shell/aliases.sh" >> ~/.zshrc
-echo "source ./shell/docker/aliases.sh" >> ~/.zshrc
-echo "source ./shell/functions.sh" >> ~/.zshrc
-echo "source ./shell/functions/aliases.sh" >> ~/.zshrc
-echo "source ./shell/settings.sh" >> ~/.zshrc
-# or use
-make shell
+# Setup aliases and functions
+make shell-setup
 ```
 
 ## VSCodium [GitHub](https://github.com/vscodium/vscodium) - VSCode [GitHub](https://github.com/microsoft/vscode)
@@ -99,3 +122,13 @@ Settings for VSCodium/VSCode, for both user and projects.
 
 - Linux: `$HOME/.config/Code/User/settings.json`
 - MacOS: `$HOME/Library/Application\ Support/Code/User/settings.json`
+
+**Commands**:
+
+```bash
+# Setup vscodium user settings.
+make vscode-setup TYPE=VSCodium
+
+# Setup vscode user settings.
+make vscode-setup TYPE=Code
+```
