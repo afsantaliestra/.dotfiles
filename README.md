@@ -11,6 +11,7 @@ Dotfiles for Linux and MacOS.
 | [Ghostty](ghostty/)          | Ghostty terminal settings.                    |
 | [Shell](shell/)              | Aliases and functions for zsh shell.          |
 | [VSCode - VSCodium](vscode/) | VSCode editor settings for projects and user. |
+| [Packages](#Packages)        | Often used packages.                          |
 
 ## Caveman [GitHub](https://github.com/juliusbrussee/caveman)
 
@@ -131,4 +132,20 @@ make vscode-setup TYPE=VSCodium
 
 # Setup vscode user settings.
 make vscode-setup TYPE=Code
+```
+
+## Packages
+
+Often used packages.
+
+| package    | description                     | links                                            |
+| ---------- | ------------------------------- | ------------------------------------------------ |
+| `openspec` | Spec Driven Development toolkit | [GitHub](https://github.com/Fission-AI/openspec) |
+| `spec-kit` | Spec Driven Development toolkit | [GitHub](https://github.com/github/spec-kit)     |
+
+**Commands**:
+
+```bash
+make openspec-install
+make speckit-install
 ```

@@ -34,7 +34,7 @@ vscode-setup:
 	fi
 	@sh ./.scripts/setup.sh vscode/settings.json $(CONFIG_BASE)/$(TYPE)/User user.json
 
-.PHONY: caveman-install claude-install
+.PHONY: caveman-install claude-install openspec-install speckit-install
 caveman-install:
 	@echo "Install caveman skills."
 	npx skills add JuliusBrussee/caveman -g
@@ -42,3 +42,11 @@ caveman-install:
 claude-install:
 	@echo "Install claude code cli."
 	curl -fsSL https://claude.ai/install.sh | bash
+
+openspec-install:
+	@echo "Install openspec."
+	@npm i -g @fission-ai/openspec
+
+speckit-install:
+	@echo "Install spec-kit."
+	@uv tool install specify-cli
